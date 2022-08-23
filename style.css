@@ -1,0 +1,50 @@
+header {
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    background: linear-gradient(rgba(46, 46, 46, 0.5), rgba(3, 3, 3, 0.5)),
+        url(Images/Messi\ Cover.jpg);
+    background-size: cover;
+}
+
+.header-text {
+    height: 800px;
+}
+
+.header-title {
+    font-size: 100px;
+    font-style: italic;
+}
+
+.header-img {
+    position: absolute;
+    top: 19%;
+
+    width: auto;
+}
+
+.selected-list {
+    height: 380px;
+}
+
+.selected-list li {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+hr {
+    border-bottom: 5px solid rgb(249, 154, 137);
+}
+
+input {
+    width: 50%;
+    margin: auto;
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(22, 22, 22);
+}
+
+.sidebar {
+    background-color: rgb(22, 22, 22);
+}

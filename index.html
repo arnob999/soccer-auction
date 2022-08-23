@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Best of your choice</title>
 
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="bg-dark">
@@ -28,9 +26,166 @@
 
 
     </header>
+    <!-- Header Section Ends -->
 
+    <!-- Main Section Starts -->
+    <main class="container mt-5 text-white ">
+        <div class="row">
+            <!-- Cards Section Starts -->
+            <div class="col-9">
+                <div class="row cards">
+                    <div class="col-4">
+                        <div class="card bg-dark border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top" src="Images/neymar.jpg " alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title fw-bolder text-center">Neymar</h5>
+                                    <div class="d-flex justify-content-around">
+                                        <p><span>36 </span> Goals</p>
+                                        <p><span>22 </span> Assists</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-primary " id="neymar-btn">Select</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top" src="Images/images.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title fw-bolder text-center">Messi</h5>
+                                    <div class="d-flex justify-content-around">
+                                        <p><span>36 </span> Goals</p>
+                                        <p><span>22 </span> Assists</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-primary " id="messi-btn">Select</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top" src="Images/mbappe.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title fw-bolder text-center">Mbappe</h5>
+                                    <div class="d-flex justify-content-around">
+                                        <p><span>36 </span> Goals</p>
+                                        <p><span>22 </span> Assists</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-primary " id="mbappe-btn">Select</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card bg-dark border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top" src="Images/Sanchez.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title fw-bolder text-center">Sanchez</h5>
+                                    <div class="d-flex justify-content-around">
+                                        <p><span>36 </span> Goals</p>
+                                        <p><span>22 </span> Assists</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-primary " id="sanchez-btn">Select</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card bg-dark border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top" src="Images/ramos.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title fw-bolder text-center">Ramos</h5>
+                                    <div class="d-flex justify-content-around">
+                                        <p><span>36 </span> Goals</p>
+                                        <p><span>22 </span> Assists</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-primary " id="ramos-btn">Select</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card bg-dark border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top" src="Images/vitor.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title fw-bolder text-center">Vitor</h5>
+                                    <div class="d-flex justify-content-around">
+                                        <p><span>36 </span> Goals</p>
+                                        <p><span>22 </span> Assists</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-primary " id="vitor-btn">Select</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Cards Section Ends -->
+
+            <!-- Calculation Section Starts -->
+            <div class="col-3 ">
+                <div class="selected-list sidebar mb-3 py-3">
+                    <h2 class="text-center">Selected V</h2>
+                    <hr>
+                    <ol id="selected">
+
+                    </ol>
+                </div>
+                <div class="container calculation sidebar py-3">
+                    <h2 class="text-center">Budget</h2>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <span class="fs-4">Per Player</span>
+                        <input class="bg-dark text-white" type="text" id="player"> <br>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn-primary px-5 mt-4 fs-4" id="calculate">Calculate</button>
+                    </div>
+                    <p class="fs-4 mb-3 mt-3 text-center">Player Expense $ <span id="expense">0</span></p>
+                    <div class="d-flex justify-content-around">
+                        <span class="fs-4">Manager</span>
+                        <input class="bg-dark text-white" type="text" id="manager"> <br>
+                    </div>
+                    <div class="d-flex justify-content-around mt-3">
+                        <span class="fs-4">Coach</span>
+                        <input class="bg-dark text-white" type="text" id="coach"> <br>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn-primary px-5 mt-4 fs-4" id="total">Calculate Total</button>
+                    </div>
+                    <p class="fs-4 mb-3 mt-3 text-center">Total Expense $ <span id="total-expense">0</span></p>
+                </div>
+            </div>
+            <!-- Calculation Section Ends -->
+
+
+        </div>
+    </main>
+    <!-- Main Section Ends -->
+
+    <!-- Footer Starts -->
+    <footer class="d-flex align-items-center justify-content-center mt-5">
+        <p class="text-center text-white">Copyright © Reserved by sportsInfo.net</p>
+    </footer>
+    <!-- Footer Ends -->
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- Javascript files -->
     <script src="JS/selected.js"></script>
     <script src="JS/calculation.js"></script>
+
+
 </body>
 
 </html>
