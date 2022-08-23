@@ -1,10 +1,16 @@
 //External Function For List Updater
 function listUpdater(name) {
     const mainList = document.getElementById("selected")
+    const nodeList = mainList.childNodes.length
+    if (nodeList <= 5) {
+        const list = document.createElement("li");
+        list.innerText = name;
+        mainList.appendChild(list);
+    }
+    else {
+        alert("You Cant Select More than 5 Player")
+    }
 
-    const list = document.createElement("li");
-    list.innerText = name;
-    mainList.appendChild(list);
 }
 
 
@@ -52,13 +58,6 @@ document.getElementById("ramos-btn").addEventListener('click', function () {
 
 document.getElementById("vitor-btn").addEventListener('click', function () {
     document.getElementById("vitor-btn").disabled = true;
-
-    // const mainList = document.getElementById("selected")
-
-    // const list = document.createElement("li");
-    // list.innerText = "Vitor";
-    // mainList.appendChild(list);
-
     listUpdater("vitor");
 }
 
