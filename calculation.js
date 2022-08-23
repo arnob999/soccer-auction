@@ -1,10 +1,10 @@
 document.getElementById("calculate").addEventListener("click", function () {
-    const mainList = document.getElementById("selected");
-    const nodeList = mainList.childNodes.length;
+    const list = document.getElementById("selected");
+    const nodList = list.childNodes.length;
 
     const perPlayer = document.getElementById("player").value;
 
-    const totalExpense = nodeList * perPlayer;
+    const totalExpense = nodList * perPlayer;
     let playerExpense = document.getElementById("expense").innerText;
 
     playerExpense = totalExpense;
